@@ -7,10 +7,20 @@ document.getElementById('changeTitleBtn').addEventListener('click', function(){
     }
 });
 
-document.getElementById('addItemBtn').addEventListener('click',function(){
+ const btn = document.getElementById('addItemBtn');
+btn.addEventListener('click',function(){
     const list = document.getElementById('list');
     const NewItem = document.createElement('li');
     NewItem.textContent = 'Bundi adds new items';
     list.appendChild(NewItem);
+});
+
+
+const styleBtn = document.getElementById('changeStyleBtn');
+styleBtn.addEventListener('click', function(){
+    const text =document.getElementById('text');
+    text.style.color = "blue";
+    text.style.backgroundColor = "green";
+    text.style.fontSize = "24px";
 });
 
